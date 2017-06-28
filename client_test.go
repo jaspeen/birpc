@@ -1,8 +1,8 @@
 package birpc
 
 import (
-	"birpc/log"
 	"context"
+	"github.com/jaspeen/birpc/log"
 	"github.com/stretchr/testify/assert"
 	"testing"
 )

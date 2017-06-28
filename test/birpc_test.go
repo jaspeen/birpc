@@ -10,8 +10,8 @@ import (
 	//"sync/atomic"
 	"testing"
 	//"net/http"
-	"birpc"
-	"birpc/log"
+	"github.com/jaspeen/birpc"
+	"github.com/jaspeen/birpc/log"
 	"net/http"
 	_ "net/http/pprof"
 )

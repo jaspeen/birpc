@@ -1,10 +1,10 @@
 package encodingtest
 
 import (
-	"birpc"
 	"bytes"
 	"errors"
 	"github.com/cavaliercoder/badio"
+	"github.com/jaspeen/birpc"
 	"github.com/stretchr/testify/assert"
 	"strconv"
 	"testing"

@@ -1,8 +1,8 @@
 package json
 
 import (
-	"birpc"
 	"encoding/json"
+	"github.com/jaspeen/birpc"
 	"io"
 )
 

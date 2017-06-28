@@ -1,9 +1,9 @@
 package birpc
 
 import (
-	"birpc/log"
 	"context"
 	"errors"
+	"github.com/jaspeen/birpc/log"
 	"github.com/jpillora/backoff"
 	"github.com/ventu-io/slf"
 	"net"

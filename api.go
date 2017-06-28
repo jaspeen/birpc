@@ -1,9 +1,9 @@
 package birpc
 
 import (
-	"birpc/log"
 	"context"
 	"errors"
+	"github.com/jaspeen/birpc/log"
 	"io"
 	"net"
 	"strconv"

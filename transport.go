@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/binary"
 	"errors"
+	"github.com/jaspeen/birpc/log"
 	"github.com/ventu-io/slf"
 	"github.com/xtaci/smux"
 	"io"
@@ -42,7 +43,7 @@ func newClientTransport(rpc *Rpc, onError func(error), rawCon net.Conn) (*Transp
 	}
 
 	return &Transport{id: id, session: ses, rpc: rpc, onError: onError, localAddr: rawCon.LocalAddr(), remoteAddr: rawCon.RemoteAddr(),
-		log: slf.WithContext("birpc.Transport").WithField("localAddr", rawCon.LocalAddr()).WithField("remoteAddr", rawCon.RemoteAddr())}, nil
+		log: log.WithContext("birpc.Transport").WithField("localAddr", rawCon.LocalAddr()).WithField("remoteAddr", rawCon.RemoteAddr())}, nil
 }
 
 func newServerTransport(rpc *Rpc, onError func(error), rawCon net.Conn, id string) (*Transport, error) {

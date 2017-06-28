@@ -1,8 +1,8 @@
 package gob
 
 import (
-	"birpc"
-	"birpc/encodingtest"
+	"github.com/jaspeen/birpc"
+	"github.com/jaspeen/birpc/encodingtest"
 	"testing"
 )
 

@@ -2,16 +2,13 @@ package birpc
 
 import (
 	"context"
-	//"encoding/binary"
-	//"errors"
+	"github.com/jaspeen/birpc/log"
 	"github.com/jpillora/backoff"
-	//"io"
-	"birpc/log"
 	"github.com/ventu-io/slf"
+	"io"
 	"net"
 	"reflect"
 	"time"
-	"io"
 )
 
 type StreamHandler func(context.Context, Stream) error
@@ -87,7 +84,7 @@ func (s *Server) handle(ctx context.Context, con net.Conn) error {
 		return err
 	}
 	go func() {
-		<- ctx.Done()
+		<-ctx.Done()
 		transport.Close()
 	}()
 	for {

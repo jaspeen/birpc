@@ -1,7 +1,7 @@
 package json
 
 import (
-	"birpc/encodingtest"
+	"github.com/jaspeen/birpc/encodingtest"
 	"testing"
 )
 

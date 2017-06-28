@@ -1,10 +1,9 @@
 package birpc
 
 import (
-	//"sync"
-	"birpc/log"
 	"errors"
 	"github.com/cavaliercoder/badio"
+	"github.com/jaspeen/birpc/log"
 	mockCon "github.com/jordwest/mock-conn"
 	"github.com/stretchr/testify/assert"
 	"github.com/ventu-io/slf"
